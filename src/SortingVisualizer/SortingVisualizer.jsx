@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./SortingVisualizer.css";
+import "../sortingAlgorithms/SortingAlgorithms"
 
 // Change this value for the speed of the animations.
 const ANIMATION_SPEED_MS = 1;
@@ -8,7 +9,7 @@ const ANIMATION_SPEED_MS = 1;
 const NUMBER_OF_ARRAY_BARS = 284;//Screen.width/4-100;
 
 // This is the main color of the array bars.
-const PRIMARY_COLOR = 'turquoise';
+const PRIMARY_COLOR =  'turquoise';//'rgba(3, 29, 52, 0.954)';
 
 // This is the color of array bars that are being compared throughout the animations.
 const SECONDARY_COLOR = 'red';
@@ -29,7 +30,7 @@ export default class SortingVisualizer extends Component {
   resetArray() {
     const array = [];
     for (let i = 0; i < NUMBER_OF_ARRAY_BARS; i++) {
-      array.push(randomIntFromIntervals(5, 730));
+      array.push(randomIntFromIntervals(5, 700));
     }
     this.setState({ array });
   }
@@ -46,7 +47,9 @@ export default class SortingVisualizer extends Component {
                 backgroundColor : PRIMARY_COLOR,
               height: `${value}px`,
             }}></div>
+
         ))}
+        <button id="generateArrayButton" onClick={()=>{this.resetArray()}}>Generate New Array</button>
       </div>
     );
   }
