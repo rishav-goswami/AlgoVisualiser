@@ -1,0 +1,15 @@
+.array-container{
+    /* display: flex;
+    justify-content: center;
+    align-self: center; */
+    position: absolute;
+    left: 100px;
+    right: 100px;
+    /* top: 50vh; */
+}
+.array-bar{
+    width: 2px;
+    background: crimson;
+   display: inline-block;
+    margin: 0 1px;
+}
