@@ -7,13 +7,13 @@ import { getMergeSortAnimations } from "../sortingAlgorithms/SortingAlgorithms";
 const ANIMATION_SPEED_MS = 5;
 
 // Change this value for the number of bars (value) in the array.
-const NUMBER_OF_ARRAY_BARS = 284; //Screen.width/4-100;
+// const NUMBER_OF_ARRAY_BARS = 284; //Screen.width/4-100;
 
 // This is the main color of the array bars after sorting.
 const PRIMARY_COLOR = "turquoise"; //'rgba(3, 29, 52, 0.954)';
 
 // This is the initial color of array bars before sorting
-const INITIAL_COLOR =  'rgba(3, 29, 52, 0.954)';//"turquoise";
+const INITIAL_COLOR = "rgba(3, 29, 52, 0.954)"; //"turquoise";
 
 // This is the color of array bars that are being compared throughout the animations.
 const SECONDARY_COLOR = "red";
@@ -31,10 +31,12 @@ export default class SortingVisualizer extends Component {
     this.resetArray();
   }
 
+  NUMBER_OF_ARRAY_BARS = this.props.number;
+  
   resetArray() {
     const array = [];
-    for (let i = 0; i < NUMBER_OF_ARRAY_BARS; i++) {
-      array.push(randomIntFromIntervals(5, 700));
+    for (let i = 0; i < this.NUMBER_OF_ARRAY_BARS; i++) {
+      array.push(randomIntFromIntervals(5, 680));
     }
     this.setState({ array });
   }
@@ -56,7 +58,6 @@ export default class SortingVisualizer extends Component {
           barTwoStyle.backgroundColor = color;
         }, i * ANIMATION_SPEED_MS); // setting time to actual make it visible
       } else {
-    
         setTimeout(() => {
           const [barOneIdx, newHeight] = animations[i]; // taking the sorted value here
           const barOneStyle = arrayBars[barOneIdx].style;
