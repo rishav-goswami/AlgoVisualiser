@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/AlgoVisualiser/static/css/main.a5f54da2.css",
+    "main.js": "/AlgoVisualiser/static/js/main.a4220791.js",
+    "static/js/787.f5ecc189.chunk.js": "/AlgoVisualiser/static/js/787.f5ecc189.chunk.js",
+    "index.html": "/AlgoVisualiser/index.html",
+    "main.a5f54da2.css.map": "/AlgoVisualiser/static/css/main.a5f54da2.css.map",
+    "main.a4220791.js.map": "/AlgoVisualiser/static/js/main.a4220791.js.map",
+    "787.f5ecc189.chunk.js.map": "/AlgoVisualiser/static/js/787.f5ecc189.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a5f54da2.css",
+    "static/js/main.a4220791.js"
+  ]
+}
