@@ -12,12 +12,12 @@
    display: inline-block;
     margin: 0 1px;
 }
-#generateArrayButton{
+.array-containerButtons{
     margin: 8px;
     padding: 6px;
     color:  rgba(3, 29, 52, 0.954);
 }
-#generateArrayButton:hover{
+.array-containerButtons:hover{
     background-color: turquoise;
     
     color: rgba(3, 29, 52, 0.954);
