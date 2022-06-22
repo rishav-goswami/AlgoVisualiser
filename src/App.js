@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import SortingVisualizer from "./sortingVisualizer/SortingVisualizer";
+import SortingVisualizer from "./SortingVisualizer/SortingVisualizer";
 
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
