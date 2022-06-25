@@ -23,7 +23,6 @@ function bubbleSortHelper(arr, n,animations) {
 
         animations.push([j,arr[j + 1],j + 1,arr[j]]);
         
-
         // swap arr[j] and arr[j+1]
         temp = arr[j];
         arr[j] = arr[j + 1];
